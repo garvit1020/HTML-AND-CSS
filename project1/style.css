@@ -1,0 +1,118 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 18px; /* Increased base font size */
+}
+
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px; /* Larger heading */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; /* Larger nav links */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 28px; /* Larger section titles */
+}
+
+/* About section with profile image */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 100px; /* Reduced size */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+/* Skills list */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+#skills li {
+  background: #e0e0e0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Contact section */
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 16px;
+}

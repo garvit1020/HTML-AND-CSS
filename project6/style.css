@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f9;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-table {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+}
+
+.plan {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #777;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.plan ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background: #ddd;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.featured {
+  border: 2px solid #007bff;
+  background: #e8f0ff;
+  transform: scale(1.05);
+}
+
+.featured .btn.primary {
+  background: #007bff;
+  color: white;
+}
+
+.featured .btn.primary:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    max-width: 90%;
+  }
+}
